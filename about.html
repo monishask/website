@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <nav>
+        <ul>
+        <li>
+        <a class="active" href="index.html"> HOME </a>
+        </li>
+        <li>
+        <a href="about.html"> ABOUT </a>
+        </li>
+        <li>
+        <a href="course.html"> COURSES OFFERED </a>
+        </li>
+        <li>
+        <a href="admit.html"> ADMISSION </a>
+        </li>
+        <li>
+        <a href="contacts.html"> CONTACT US </a>
+        </li>
+        </ul>
+        </nav>
+<script>
+function Validatename(){
+var name = document.getElementById("id1").value;
+if (name == null || name == " ")
+alert ("Please Fill Your Valid Name");
+else
+window.alert(name);
+var letters = "/^[A-Za-z]+$/";
+if (document.getElementById("id1").value.match(letters))
+return true;
+ }
+</script>
+</head>
+<body>
+<form>
+ Name: <input type="text" id="id1" value="">
+<br>
+<br>
+ Email: <input type="text" id="id2" value="">
+<br>
+<br>
+<input type="button" id = "id3" value = "submit" onclick="Validatename();">
+</form>
+</body>
+</html>
